@@ -19,5 +19,9 @@
         ]
       }
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Fabio3rs/more-cpp-embedded-highlight.git"
   }
 }
