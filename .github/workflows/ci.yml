@@ -2,6 +2,8 @@ name: Package VS Code Extension
 
 on:
   push:
+    tags:
+      - '*'
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
@@ -34,3 +36,11 @@ jobs:
       with:
         name: extension-package
         path: '*.vsix'
+
+    - uses: xresloader/upload-to-github-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        file: '*.vsix'
+        tags: true
+        draft: true
