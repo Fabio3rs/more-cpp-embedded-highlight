@@ -1,0 +1,270 @@
+{
+    "fileTypes": [
+        "cpp",
+        "hpp"
+    ],
+    "injectionSelector": "L:source.cpp -string -comment",
+    "patterns": [
+        {
+            "begin": "R\"html\\(",
+            "end": "\\)html\"",
+            "beginCaptures" : {
+                "0": {
+                    "name": "punctuation.definition.string.html.begin"
+                }
+            },
+            "endCaptures" : {
+                "0": {
+                    "name": "punctuation.definition.string.html.end"
+                }
+            },
+            "contentName": "text.html.basic",
+            "patterns": [
+                {
+                    "include": "text.html.basic"
+                }
+            ]
+        },
+        {
+            "begin": "R\"js\\(",
+            "end": "\\)js\"",
+            "contentName": "text.js.basic",
+            "patterns": [
+                {
+                    "include": "source.js"
+                }
+            ]
+        },
+        {
+            "begin": "R\"cpp\\(",
+            "end": "\\)cpp\"",
+            "contentName": "source.cpp.basic",
+            "patterns": [
+                {
+                    "include": "source.cpp"
+                }
+            ]
+        },
+        {
+            "begin": "R\"cxx\\(",
+            "end": "\\)cxx\"",
+            "contentName": "source.cxx.basic",
+            "patterns": [
+                {
+                    "include": "source.cpp"
+                }
+            ]
+        },
+        {
+            "begin": "R\"c\\(",
+            "end": "\\)c\"",
+            "contentName": "source.c.basic",
+            "patterns": [
+                {
+                    "include": "source.c"
+                }
+            ]
+        },
+        {
+            "begin": "R\"css\\(",
+            "end": "\\)css\"",
+            "contentName": "text.css.basic",
+            "patterns": [
+                {
+                    "include": "source.css"
+                }
+            ]
+        },
+        {
+            "begin": "R\"py\\(",
+            "end": "\\)py\"",
+            "contentName": "text.python.basic",
+            "patterns": [
+                {
+                    "include": "source.python"
+                }
+            ]
+        },
+        {
+            "begin": "R\"xml\\(",
+            "end": "\\)xml\"",
+            "contentName": "text.xml.basic",
+            "patterns": [
+                {
+                    "include": "text.xml"
+                }
+            ]
+        },
+        {
+            "begin": "R\"json\\(",
+            "end": "\\)json\"",
+            "contentName": "source.json",
+            "patterns": [
+                {
+                    "include": "source.json"
+                }
+            ]
+        },
+        {
+            "begin": "R\"yaml\\(",
+            "end": "\\)yaml\"",
+            "contentName": "source.yaml",
+            "patterns": [
+                {
+                    "include": "source.yaml"
+                }
+            ]
+        },
+        {
+            "begin": "R\"toml\\(",
+            "end": "\\)toml\"",
+            "contentName": "source.toml",
+            "patterns": [
+                {
+                    "include": "source.toml"
+                }
+            ]
+        },
+        {
+            "begin": "R\"sh\\(",
+            "end": "\\)sh\"",
+            "contentName": "source.shell",
+            "patterns": [
+                {
+                    "include": "source.shell"
+                }
+            ]
+        },
+        {
+            "begin": "R\"bash\\(",
+            "end": "\\)bash\"",
+            "contentName": "source.shell",
+            "patterns": [
+                {
+                    "include": "source.shell"
+                }
+            ]
+        },
+        {
+            "begin": "R\"zsh\\(",
+            "end": "\\)zsh\"",
+            "contentName": "source.shell",
+            "patterns": [
+                {
+                    "include": "source.shell"
+                }
+            ]
+        },
+        {
+            "begin": "R\"sh-session\\(",
+            "end": "\\)sh-session\"",
+            "contentName": "source.shell",
+            "patterns": [
+                {
+                    "include": "source.shell"
+                }
+            ]
+        },
+        {
+            "begin": "R\"shell\\(",
+            "end": "\\)shell\"",
+            "contentName": "source.shell",
+            "patterns": [
+                {
+                    "include": "source.shell"
+                }
+            ]
+        },
+        {
+            "begin": "R\"batch\\(",
+            "end": "\\)batch\"",
+            "contentName": "source.bat",
+            "patterns": [
+                {
+                    "include": "source.bat"
+                }
+            ]
+        },
+        {
+            "begin": "R\"php\\(",
+            "end": "\\)php\"",
+            "contentName": "source.php",
+            "patterns": [
+                {
+                    "include": "source.php"
+                }
+            ]
+        },
+        {
+            "begin": "R\"md\\(",
+            "end": "\\)md\"",
+            "contentName": "source.md",
+            "patterns": [
+                {
+                    "include": "text.html.markdown"
+                }
+            ]
+        },
+        {
+            "begin": "R\"lua\\(",
+            "end": "\\)lua\"",
+            "contentName": "source.lua",
+            "patterns": [
+                {
+                    "include": "source.lua"
+                }
+            ]
+        },
+        {
+            "begin": "R\"asm\\(",
+            "end": "\\)asm\"",
+            "contentName": "source.asm",
+            "patterns": [
+                {
+                    "include": "source.asm"
+                }
+            ]
+        },
+        {
+            "begin": "R\"rust\\(",
+            "end": "\\)rust\"",
+            "contentName": "source.rust",
+            "patterns": [
+                {
+                    "include": "source.rust"
+                }
+            ]
+        },
+        {
+            "begin": "R\"dockerfile\\(",
+            "end": "\\)dockerfile\"",
+            "contentName": "source.dockerfile",
+            "patterns": [
+                {
+                    "include": "source.dockerfile"
+                }
+            ]
+        },
+        {
+            "begin": "R\"cmake\\(",
+            "end": "\\)cmake\"",
+            "contentName": "source.cmake",
+            "patterns": [
+                {
+                    "include": "source.cmake"
+                }
+            ]
+        },
+        {
+            "begin": "R\"makefile\\(",
+            "end": "\\)makefile\"",
+            "contentName": "source.makefile",
+            "patterns": [
+                {
+                    "include": "source.makefile"
+                }
+            ]
+        }
+    ],
+    "scopeName": "inline.cpp-embedded-langs-injection"
+}

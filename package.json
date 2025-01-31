@@ -1,0 +1,23 @@
+{
+  "name": "cppmoreembeddedhighlighting",
+  "displayName": "cppmoreembeddedhighlighting",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.94.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "grammars": [
+      {
+        "scopeName": "inline.cpp-embedded-langs-injection",
+        "path": "./syntaxes/cpp-embedded-langs-injection.json",
+        "injectTo": [
+          "source.cpp"
+        ]
+      }
+    ]
+  }
+}
