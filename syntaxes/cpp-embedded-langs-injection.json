@@ -218,11 +218,11 @@
         {
             "begin": "R\"asm\\(",
             "end": "\\)asm\"",
-            "contentName": "source.asm",
+            "contentName": "source.asm.x86_64",
             "patterns": [
-                {
-                    "include": "source.asm"
-                }
+                { "include": "source.asm" },
+                { "include": "source.asm.x86_64" },
+                { "include": "source.platformio-debug-asm" }
             ]
         },
         {
